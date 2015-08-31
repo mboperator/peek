@@ -1,13 +1,19 @@
 # Peek
 
-[![Build Status](https://travis-ci.org/peek/peek.png?branch=master)](https://travis-ci.org/peek/peek) [![Gem Version](https://badge.fury.io/rb/peek.png)](http://badge.fury.io/rb/peek) [![Inline docs](http://inch-ci.org/github/peek/peek.png)](http://inch-ci.org/github/peek/peek)
-
 Take a peek into your Rails application.
 
 ![Preview](https://f.cloud.github.com/assets/79995/244991/03cee1fa-8a74-11e2-8e33-283cf1298a60.png)
 
 This was originally built at GitHub to help us get insight into what's going
 on, this is just an extraction so other Rails applications can have the same.
+
+## Procore Modifications
+* Modified SCSS to fit application style.
+* Added `skip_before_filters` for authorization.
+* Moved additional Peek Views (Git, PG, etc.) into this repo to avoid having to
+  load an additional set of gems.
+* Added an endpoint at `/peek/hide` to hide the peek bar for the duration of the
+  session.
 
 ## Installation
 
