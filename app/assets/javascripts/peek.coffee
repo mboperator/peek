@@ -1,4 +1,5 @@
 #= require peek/vendor/jquery.tipsy
+#= require peek/views/performance_bar
 
 requestId = null
 
