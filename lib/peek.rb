@@ -4,6 +4,7 @@ require 'atomic'
 
 require 'peek/adapters/memory'
 require 'peek/views/view'
+require 'peek/views/git'
 
 module Peek
   ALLOWED_ENVS = ['development', 'staging'].freeze
