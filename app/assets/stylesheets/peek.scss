@@ -1,10 +1,11 @@
 //= require peek/vendor/tipsy
 
 #peek {
-  background: #000;
+  background-color: #222;
+  border-bottom: 1px solid #000;
+  color: #999;
   height: 35px;
   line-height: 35px;
-  color: #999;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
 
   .hidden {
@@ -17,20 +18,16 @@
   }
 
   &.production {
-    background: image-url('peek/bar/production.gif') repeat 0 0;
   }
 
   &.staging {
-    background: image-url('peek/bar/staging.gif') repeat 0 0;
   }
 
   &.development {
-    background: image-url('peek/bar/development.gif') repeat 0 0;
   }
 
   .wrapper {
-    width: 800px;
-    margin: 0 auto;
+    padding: 0 20px;
   }
 
   // UI Elements
@@ -54,15 +51,22 @@
   }
 
   strong {
-    color: #fff;
+    color: #ccc;
   }
 
   .view {
-    margin-right: 15px;
+    color: #555;
+    margin-right: 25px;
     float: left;
+    border: none;
+    width: initial;
 
     &:last-child {
       margin-right: 0;
+    }
+
+    &.align-right {
+      float: right;
     }
   }
 
@@ -70,11 +74,12 @@
     &.css-truncate-target,
     .css-truncate-target {
       display: inline-block;
-      max-width: 125px;
+      font-size: 12px;
+      max-width: 200px;
       overflow: hidden;
       text-overflow: ellipsis;
-      white-space: nowrap;
       vertical-align: top;
+      white-space: nowrap;
     }
 
     &.expandable:hover .css-truncate-target,

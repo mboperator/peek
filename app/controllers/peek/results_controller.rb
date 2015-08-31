@@ -1,6 +1,9 @@
 module Peek
   class ResultsController < ApplicationController
     before_filter :restrict_non_access
+ 
+    # Procore - Skip Authorize
+    skip_before_filter :authorize
 
     def show
       respond_to do |format|
@@ -12,6 +15,12 @@ module Peek
           end
         end
       end
+    end
+
+    def hide
+      session[:peek] = false 
+
+      redirect_to :back
     end
 
     private
