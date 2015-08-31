@@ -54,7 +54,8 @@ module Peek
   end
 
   def self.enabled?
-    ALLOWED_ENVS.include?(env)
+    #ALLOWED_ENVS.include?(env)
+    true
   end
 
   def self.env
