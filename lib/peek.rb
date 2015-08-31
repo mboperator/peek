@@ -6,6 +6,7 @@ require 'peek/adapters/memory'
 require 'peek/views/view'
 require 'peek/views/git'
 require 'peek/views/performance_bar'
+require 'peek/views/resque'
 
 module Peek
   ALLOWED_ENVS = ['development', 'staging'].freeze

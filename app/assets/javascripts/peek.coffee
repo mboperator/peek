@@ -1,5 +1,6 @@
 #= require peek/vendor/jquery.tipsy
 #= require peek/views/performance_bar
+#= require peek/views/resque
 
 requestId = null
 
