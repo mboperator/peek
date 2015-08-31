@@ -1,4 +1,5 @@
 require 'peek/controller_helpers'
+require 'peek/rblineprof/controller_helpers'
 
 module Peek
   class Railtie < ::Rails::Engine
@@ -32,6 +33,12 @@ module Peek
 
       config.to_prepare do
         Peek.views
+      end
+    end
+
+    initializer 'peek.rblineprof.include_controller_helpers' do
+      ActiveSupport.on_load(:action_controller) do
+        include Peek::Rblineprof::ControllerHelpers
       end
     end
   end

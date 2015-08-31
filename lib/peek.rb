@@ -8,6 +8,7 @@ require 'peek/views/git'
 require 'peek/views/performance_bar'
 require 'peek/views/resque'
 require 'peek/views/pg'
+require 'peek/views/rblineprof'
 
 module Peek
   ALLOWED_ENVS = ['development', 'staging'].freeze

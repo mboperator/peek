@@ -1,0 +1,74 @@
+.peek-rblineprof-modal {
+  width: 900px;
+  position: absolute;
+  z-index: 10000;
+  left: 50%;
+  top: 50px;
+  margin-left: -450px;
+
+  pre,
+  pre span {
+    font: 12px/18px monospace;
+  }
+}
+
+.peek-dropdown {
+  background: #fff;
+  position: absolute;
+  display: none;
+  z-index: 10001;
+  border-radius: 5px;
+  line-height: 18px;
+  min-width: 150px;
+  padding: 5px;
+  color: #333;
+  text-shadow: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+
+  a {
+    color: #333;
+  }
+}
+
+#peek .view:hover .peek-dropdown {
+  display: block;
+}
+
+.peek-rblineprof-file {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  margin-bottom: 10px;
+
+  .heading {
+    background: #333;
+    color: #aaa;
+    padding: 10px 15px;
+    text-shadow: 0 1px 0 #000;
+
+    .duration {
+      margin: 0 65px 0 40px;
+    }
+
+    a {
+      color: #fff;
+    }
+  }
+
+  .data {
+    overflow: hidden;
+  }
+
+  .code {
+    overflow-x: scroll;
+    border-left: 1px solid #ccc;
+  }
+
+  pre {
+    padding: 15px;
+
+    &.duration {
+      float: left;
+      width: 230px;
+    }
+  }
+}
