@@ -23,9 +23,11 @@
   }
 
   &.staging {
+    background-color: #000066;
   }
 
   &.development {
+    background-color: #194000;
   }
 
   .wrapper {
@@ -57,7 +59,7 @@
   }
 
   .view {
-    color: #555;
+    color: #777;
     margin-right: 25px;
     float: left;
     border: none;
@@ -89,5 +91,9 @@
     &.expandable:hover.css-truncate-target {
       max-width: 10000px !important;
     }
+  }
+
+  a {
+    color: #83b9d5;
   }
 }
