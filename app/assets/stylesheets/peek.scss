@@ -20,12 +20,15 @@
   }
 
   &.production {
+    background-color: #a00000;
   }
 
   &.staging {
+    background-color: #000044;
   }
 
   &.development {
+    background-color: #194000;
   }
 
   .wrapper {
@@ -57,7 +60,7 @@
   }
 
   .view {
-    color: #555;
+    color: #777;
     margin-right: 25px;
     float: left;
     border: none;
