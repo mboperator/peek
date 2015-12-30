@@ -22,7 +22,7 @@
   &.production {
   }
 
-  &.staging {
+  &[class^='staging'] {
     background-color: #000066;
   }
 
